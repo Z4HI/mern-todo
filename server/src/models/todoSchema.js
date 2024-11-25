@@ -4,12 +4,18 @@ import mongoose from "mongoose";
 const Schema = mongoose.Schema;
 
 const todoSchema = new Schema({
-  title: String,
+  userId: String,
+  todos:[
+    {
+      checked:Boolean,
+      text:String
+    },
+  ]
 
 });
 
 
-const todoModel = mongoose.model("todo",todoSchema);
+const todoModel = mongoose.model("todos",todoSchema);
 
 
 export default todoModel;

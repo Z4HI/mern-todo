@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: "Poppins";
 }
 
+.navbar{
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar > * {
+  cursor: pointer;
+}
+
+.todoComponent{
+
+}
+
+.todos{
+  width: 50%;
+  background-color: red;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  padding: 4px;
+  border: solid black 3px;
+  margin-top: 3px;
+}
+.todo{
+  flex-basis: 80%;
+}
+.delIcon{
+  margin-right: 0;
+}
+.delButton{
+  background-color: blue;
+  right: 0;
+}
